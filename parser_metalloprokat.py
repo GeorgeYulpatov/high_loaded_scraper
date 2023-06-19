@@ -73,8 +73,8 @@ def base_section_urls(file_path):
             else:
                 file.write(f"https://23met.ru{full_url}\n")
 
-    time.sleep(1)
-    get_base_section_urls()
+    # time.sleep(1)
+    # get_base_section_urls()
 
 
 #  Переход по ссылкам подразделов страницы Металлопрокат для получения списка ссылок
@@ -204,8 +204,7 @@ def pars_page(file_path):
 
 
 def main():
-    # get_page()
-    pars_page(file_path='page/metalloprokat_page_name.txt')
+    get_page()
 
 
 if __name__ == "__main__":
